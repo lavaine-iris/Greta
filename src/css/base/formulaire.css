@@ -1,0 +1,70 @@
+.rectangle__vert{
+    background-color: var(--vert);
+    position: absolute;
+    width: 375px;
+    height: 56px;
+    left: 0px;
+    top: 56px;
+}
+
+.titre__contact{
+    color: var(--blanc);
+    text-align: center;
+    font-size: var(--title-md);
+}
+
+.presentation1{
+    position: relative;
+    top: 120px;
+    font-weight: 600;
+}
+
+.presentation2{
+    position: relative;
+    top: 120px;
+    font-weight: 100;
+}
+
+#message {
+    font-family: var(--font-source);
+    position: relative;
+    top: 60px;
+    border: 1px solid var(--noir);
+    width: 322px;
+    height: 160px;
+    margin-left: 23px;
+  }
+
+#email{
+    font-family: var(--font-source);
+    position: relative;
+    top: 100px;
+    border: 1px solid var(--noir);
+    margin-left: 23px;
+    width: 322px;
+    height: 40px;
+}
+
+.titre__formulaire1{
+    margin-left: 25px;
+    position: relative;
+    top: 130px;
+}
+
+.titre__formulaire2{
+    margin-left: 25px;
+    position: relative;
+    top: 90px;
+}
+
+.bouton__envoyer{
+    font-size: var(--title-md);
+    font-family: var(--font-source);
+    background-color: var(--noir-1);
+    color: var(--vert);
+    position: relative;
+    width: 121px;
+    height: 39px;
+    left: 223px;
+    top: 100px;
+}

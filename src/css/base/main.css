@@ -52,6 +52,11 @@ h4{
     font-weight: 200;
 }
 
+h6{
+    font-family: var(--font-source);
+    font-size: var(--title-md);
+}
+
 p{
     font-family: var(--font-source);
 }
@@ -197,4 +202,15 @@ top: 310px;
     padding-top: 20px;
 }
 
+.dernier_p{
+    margin-bottom: 130px;
+}
 
+
+
+.autres__projets{
+    position: relative;
+    right: 20px;
+    left: 22px;
+    top: 166px;
+}
