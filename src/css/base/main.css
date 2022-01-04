@@ -4,7 +4,46 @@
   box-sizing: border-box;
 }
 
+.container {
+    padding-left: var(--space3x);
+    padding-right: var(--space3x);
+  }
+
+
 /*Mise en forme des titres et paragraphes*/
-h1{
-    font-family: var(--font-mono);
+.titre{
+    z-index: 1;
+    color: var(--vert);
+    width: fit-content;
+    font-family: var(--font-source);
+    font-size: var(--title-xxl);
+    position: relative;
+    left: 115px;
+    top: 250px;
 }
+
+h5{
+    color: var(--blanc);
+    font-family: var(--font-source);
+    font-size: var(--title-md);
+    padding-top: 30px;
+    margin-left: 20px;
+}
+
+.article__1{
+    background-color: var(--vert);
+    position: relative;
+    width: 375px;
+    height: 322px;
+    left: 0px;
+    top: -100px;
+}
+
+.down{
+    position: absolute;
+width: 63.4px;
+height: 31.9px;
+left: 156px;
+top: 213px;
+}
+

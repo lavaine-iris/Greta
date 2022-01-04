@@ -1,0 +1,22 @@
+.photo {
+    max-width: 100vw;
+    height: auto;
+    
+  }
+
+.photo__accueil{
+    position: relative;
+    top: -64px;
+    width: 375px;
+    height: 310px;
+}
+
+.logo__accueil{
+    z-index: 1;
+    position: absolute;
+    width: 109px;
+    height: 147px;
+    left: 133px;
+    top: 138px;
+}
+

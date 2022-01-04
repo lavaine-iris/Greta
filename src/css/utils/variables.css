@@ -7,7 +7,6 @@
     --gris-2:rgba(177, 182, 185, 1);
     --noir:rgba(0, 0, 0, 1);
     --noir-1:rgba(29, 38, 43, 1);
-    --noir-2:rgba(29, 38, 43, 1);
 
 
     /* Text-size styles */
@@ -19,7 +18,7 @@
     --title-md: 1.125rem;
     --text-sm: 0.875rem; 
     --test-xs: 0.75rem;
-    
+
 
     /* Font-family style */
     --font-source: 'Source sans pro';

@@ -14,27 +14,33 @@
 
         <body>
         <!--Mise en place du header -->
-            <header>
-                <div>
+            <header class="header__container">
+                <div class="header__start">
                     <a href="/">
-                        <img src="icons/logo.svg" alt="Logo Greta">
+                        <img class="header__logo" src="icons/logo.svg" alt="Logo Greta">
                     </a>
                 </div>
 
             <!--Icône menu hamburger-->
-                <button>
-                    <span></span>
+                <button class="header__menu-btn menu-btn">
+                    <span class="menu-btn__bar"></span>
                 </button>
 
             <!--Menu principal-->
-                <nav>
-                    <ul>
-                        <li><a href="tony.html">Tony Stark</a></li>
-                        <li><a href="pollution.html">La pollution automobile</a></li>
-                        <li><a href="solutions.html">Solutions</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="projets.html">Autres projets</a></li>
-                        <li><a href="a-propos.html">A propos</a></li>
+                <nav class="header__menu menu">
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item">
+                            <a class="menu__link" href="tony.html">Tony Stark</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="pollution.html">La pollution automobile</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="solutions.html">Solutions</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contact.html">Contact</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="projets.html">Autres projets</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="a-propos.html">A propos</a></li>
                     </ul>
                 </nav>
             <!--Fin du menu principal-->
@@ -43,51 +49,51 @@
 
         <!-- Contenu principal de la page -->
             <main>
-                <div>
-                    <img src="icons/logo.svg" alt="Logo Greta">
-                    <h1>GRETA</h1>
-                    <img src="img/herbe.webp" alt="Photo accueil">
+                <div class="home">
+                    <img class="logo__accueil" src="icons/logo.svg" alt="Logo Greta">
+                    <h1 class="titre">GRETA</h1>
+                    <img class="photo__accueil" src="img/herbe.webp" alt="Photo accueil">
                 </div>
 
-                <section>
+                <section class="article__1">
                     <h5>Le but de “GRETA” est de sensibiliser les internautes sur le  réchauffement climatique. Pour cela j’ai choisi le super héros Tony Stark alias Iron Man pour parler de son bilan carbone et le livre six degrés que va-t-il se passer de Mark Lunas.</h5>
-                    <img src="icons/down.svg" alt="flèche bas">
+                    <img class="down" src="icons/down.svg" alt="flèche bas">
                 </section>
 
-                <section>
+                <article>
                     <h3>TONY STARK ALIAS </h3>
                     <h2>IRON MAN</h2>
-                    <img src="img/ironman.webp" alt="Iron Man">
+                    <img class="photo" src="img/ironman.webp" alt="Iron Man">
                     <h3>IRON MAN UN SUPER HERO DU COMICS</h3>
                     <p>Tony Stark alias Iron man est un super héros qui joue dans l’univers Marvel de la maison d’édition Marvel comics. Tout a commencé en Afghanistan pendant la guerre ...</p>
-                    <button>Lire la suite</button>
-                </section>
+                    <a href="tony.html">Lire la suite</a>
+                </article>
 
-                <section>
+                <article>
                     <h3>LES AUTOMOBILES POLLUENT !</h3>
-                    <img src="img/voiture.webp" alt="Voiture">
+                    <img class="photo" src="img/voiture.webp" alt="Voiture">
                     <p>Les voitures sont les deuxième plus gros émetteurs de dioxyde de carbone derrière les industries. Elles sont responsables de la grande...</p>
-                    <button>Lire la suite</button>
-                </section>
+                    <a href="pollution.html">Lire la suite</a>
+                </article>
 
-                <section>
+                <article>
                     <h3>CONSOMMONS DES ENERGIES VERTES !</h3>
-                    <img src="img/ecologie.webp" alt="Ecologie">
+                    <img class="photo" src="img/ecologie.webp" alt="Ecologie">
                     <p>Le dioxyde de carbone rejeté par les voitures et présent dans l’air peut être réduite d’ici deux mille cinquante. Si nous respectons certaines conditions à savoir ...</p>
-                    <button>Lire la suite</button>
-                </section>
+                    <a href="solutions.html">Lire la suite</a>
+                </article>
 
             </main>
         <!-- Fin du contenu principal -->
 
         <!--Mise en place footer-->
-            <footer>
-                <p>PierrePolJ</p>
-                <img src="icons/facebook.svg" alt="Icône Facebook">
-                <img src="icons/mail.svg" alt="Icône Mail">
-                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
-                <img src="icons/mmi.svg" alt="Logo MMI">
-                <p>© Tous droits réservés - 2019</p>
+            <footer class="footer container">
+                <p class="font__footer">PierrePolJ</p>
+                <img class="icon__fb" src="icons/facebook.svg" alt="Icône Facebook">
+                <img class="icon__mail" src="icons/mail.svg" alt="Icône Mail">
+                <p class="font__projet">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
+                <img class="icon__mmi" src="icons/mmi.svg" alt="Logo MMI">
+                <p class="font__c">© Tous droits réservés - 2019</p>
             </footer>
 
         </body>

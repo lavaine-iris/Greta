@@ -1,0 +1,21 @@
+.header__container {
+    background-color: var(--blanc-2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 375px;
+    z-index: 2;
+    padding: var(--space2x) var(--space3x);
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s ease-in-out;
+  }
+
+  .header__logo{
+    position: relative; 
+    background-color: transparent;
+    left: 168px;
+    width: 39px;
+    height: 52px; 
+}
+

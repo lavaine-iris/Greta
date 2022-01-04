@@ -1,0 +1,52 @@
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right : 0;
+    background-color: var(--pink-2);
+    font-size: var(--font-mono);
+    transition: all .4s ease-in-out;
+  }
+
+/* Mise en forme du bouton de menu "Hamburger" */
+.menu-btn {
+    position: relative;
+    z-index: 3;
+    width: 30px; 
+    right: 320px;
+  }
+  
+  .menu-btn__bar,
+  .menu-btn__bar::before,
+  .menu-btn__bar::after {
+    content: '';
+    background: var(--noir);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    transition: all .4s ease-in-out;
+  }
+  
+  .menu-btn__bar::before {
+    top: -10px;
+  }
+  
+  .menu-btn__bar::after {
+    top: 10px;
+  }
+
+  /* Permet d'annuler la mise en forme des bouton qu'applique le navigateur. */
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}

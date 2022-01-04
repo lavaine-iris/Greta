@@ -1,0 +1,45 @@
+.footer{
+    background-color: var(--noir-1);
+    height: 337px;
+}
+
+.font__footer{
+    color: var(--blanc);
+    font-family: var(--font-source);
+}
+
+.font__projet{
+    color: var(--gris-2);
+    font-family: var(--font-source);
+}
+
+.font__c{
+    text-align: center;
+    color: var(--blanc);
+    font-family: var(--font-source);
+}
+
+.icon__fb{
+    position: absolute;
+    width: 50px;
+    height: 46px;
+    left: 130px;
+    top: 2248px;
+}
+
+.icon__mail{
+    position: absolute;
+    width: 42px;
+    height: 39px;
+    left: 201px;
+    top: 2255px;
+}
+
+.icon__mmi{
+    position: absolute;
+    width: 42px;
+    height: 38px;
+    left: 169px;
+    top: 2345px;
+}
+
