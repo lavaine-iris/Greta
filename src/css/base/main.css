@@ -123,16 +123,11 @@ a:link
 
 #trait__vert{
     height: 12px;
-
     background-color: var(--vert);
-    
-    width: 335px;
-    
-    text-align: center;
-    
+    width: 322px;    
     position:relative;
-    left: 20px;
-    bottom:-20px;
+    left: 30px;
+    bottom:0px;
 }
 
 #trait__noir{
@@ -186,6 +181,20 @@ top: 310px;
     width: 160px;
     left: 108px;
     top: 592px;
+}
+
+.debut__article3{
+    font-size: var(--text-sm);
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    top: 88px;
+}
+
+.fond__vert3{
+    background-color: var(--vert);
+    height: 600px;
+    padding-top: 20px;
 }
 
 

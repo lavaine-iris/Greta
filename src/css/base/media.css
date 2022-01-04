@@ -26,24 +26,34 @@ img{
 
 .image__fond{
     position: absolute;
-    width: 308px;
-    height: 329px;
-    left: 34px;
-    top: 190px;
-}
-
-.img__article{
-    max-width: 100%;
-    padding: 20px;
+    width: 309px;
+    height: 269px;
+    left: 33px;
+    top: 270px;
 }
 
 figcaption{
     font-size: var(--test-xs);
     font-family: var(--font-source);
     color: var(--gris-2);
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
     position: relative;
-    top: -15px;
+    top: 0px;
+}
+
+.img__article{
+    width: 322px;
+    height: 198px;
+    margin-left: 30px;
+}
+
+.image__fond2{
+    position: absolute;
+    width: 308px;
+    height: 329px;
+    left: 34px;
+    top: 190px;
 }
 
 
