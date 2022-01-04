@@ -1,5 +1,5 @@
 .photo {
-    max-width: 100vw;
+    max-width: 100%;
     height: auto;
     
   }
@@ -19,4 +19,22 @@
     left: 133px;
     top: 138px;
 }
+
+img{
+    max-width: 100%;
+}
+
+.image__fond{
+    position: absolute;
+    width: 308px;
+    height: 329px;
+    left: 34px;
+    top: 190px;
+}
+
+.img__article{
+    max-width: 100%;
+    padding: 20px;
+}
+
 

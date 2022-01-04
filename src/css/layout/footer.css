@@ -20,26 +20,23 @@
 }
 
 .icon__fb{
-    position: absolute;
+    position: relative;
     width: 50px;
     height: 46px;
     left: 130px;
-    top: 2248px;
 }
 
 .icon__mail{
-    position: absolute;
+    position: relative;
     width: 42px;
     height: 39px;
     left: 201px;
-    top: 2255px;
 }
 
 .icon__mmi{
-    position: absolute;
+    position: relative;
     width: 42px;
     height: 38px;
     left: 169px;
-    top: 2345px;
 }
 
