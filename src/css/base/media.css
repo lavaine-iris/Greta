@@ -37,4 +37,15 @@ img{
     padding: 20px;
 }
 
+figcaption{
+    font-size: var(--test-xs);
+    font-family: var(--font-source);
+    color: var(--gris-2);
+    margin-left: 20px;
+    position: relative;
+    top: -15px;
+}
+
+
+
 
