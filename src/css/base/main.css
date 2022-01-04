@@ -178,4 +178,14 @@ left: 22px;
 top: 310px;
 }
 
+#separateur{
+    height: 8px;
+    width: 100px;
+    background-color: var(--noir);
+    position: absolute;
+    width: 160px;
+    left: 108px;
+    top: 592px;
+}
+
 

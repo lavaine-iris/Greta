@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +10,17 @@
         <!-- Déclaration de la feuille de style CSS -->
         <link rel="stylesheet" href="src/css/style.css">
 
+        <!-- Déclaration de la librairie AlpineJS-->
+        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
     </head>
 
-        <body>
+        <body x-data="{ atTop: true }">
         <!--Mise en place du header -->
-            <header class="header__container">
+            <header class="header__container"
+                @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                :class="{ 'header--atTop1' : !atTop }">
+                
                 <div class="header__start">
                     <a href="/">
                         <img class="header__logo" src="icons/logo.svg" alt="Logo Greta">
@@ -22,25 +28,40 @@
                 </div>
 
             <!--Icône menu hamburger-->
-                <button class="header__menu-btn menu-btn">
+                <button class="header__menu-btn menu-btn"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
                     <span class="menu-btn__bar"></span>
                 </button>
 
             <!--Menu principal-->
-                <nav class="header__menu menu">
+                <header class="header__container">
+                    <div class="header__start">
+                        <a href="/">
+                            <img class="header__logo" src="icons/logo.svg" alt="Logo Greta">
+                        </a>
+                    </div>
+                </header>
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                     <ul class="menu__list list-unstyled">
                         <li class="menu__item">
                             <a class="menu__link" href="tony.html">Tony Stark</a></li>
+                            <div id="trait__blanc"></div>
                         <li class="menu__item">
                             <a class="menu__link" href="pollution.html">La pollution automobile</a></li>
+                            <div id="trait__blanc"></div>
                         <li class="menu__item">
                             <a class="menu__link" href="solutions.html">Solutions</a></li>
+                            <div id="trait__blanc"></div>
                         <li class="menu__item">
                             <a class="menu__link" href="contact.html">Contact</a></li>
+                            <div id="trait__blanc"></div>
                         <li class="menu__item">
                             <a class="menu__link" href="projets.html">Autres projets</a></li>
+                            <div id="trait__blanc"></div>
                         <li class="menu__item">
                             <a class="menu__link" href="a-propos.html">A propos</a></li>
+                            <div id="trait__blanc"></div>
                     </ul>
                 </nav>
             <!--Fin du menu principal-->

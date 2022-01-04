@@ -7,9 +7,14 @@
     position: fixed;
     top: 0; bottom: 0;
     left: 0; right : 0;
-    background-color: var(--pink-2);
-    font-size: var(--font-mono);
+    background-color: var(--noir-1);
+    color: var(--vert);
     transition: all .4s ease-in-out;
+  }
+
+  .menu--open {
+    visibility: visible;
+    opacity: 1;
   }
 
 /* Mise en forme du bouton de menu "Hamburger" */
@@ -49,4 +54,53 @@ button {
   background: none;
   padding: 0;
   cursor: pointer;
+}
+
+/* Mise en forme des éléments du menu */
+.menu__list {
+    margin-bottom: 50px;
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+  }
+  
+  .menu__item {
+    margin-top: 15%;
+  }
+  
+  .menu__link {
+    font-size: var(--title-md);
+    font-family: var(--font-source);
+    color: var(--vert);
+    text-decoration: none;
+  }
+
+/* Technique pour transformer les 3 barres du bouton de menu en croix
+Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
+  background-color: var(--black);
+}
+
+#trait__blanc{
+    height: 2px;
+    width: 375px;
+    background-color: var(--gris-1);
+    position: relative;
+    left: -50px;
+    top: 30px;
 }

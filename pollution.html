@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +10,17 @@
         <!-- Déclaration de la feuille de style CSS -->
         <link rel="stylesheet" href="src/css/style.css">
 
+        <!-- Déclaration de la librairie AlpineJS-->
+        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
     </head>
 
-        <body>
+        <body x-data="{ atTop: true }">
         <!--Mise en place du header -->
-            <header class="header__container">
+            <header class="header__container"
+                @scroll.window="atTop = ( window.scrollY > 100 ? false : true )"
+                :class="{ 'header--atTop1' : !atTop }">
+                
                 <div class="header__start">
                     <a href="/">
                         <img class="header__logo" src="icons/logo.svg" alt="Logo Greta">
@@ -22,25 +28,40 @@
                 </div>
 
             <!--Icône menu hamburger-->
-                <button class="header__menu-btn menu-btn">
+                <button class="header__menu-btn menu-btn"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
                     <span class="menu-btn__bar"></span>
                 </button>
 
             <!--Menu principal-->
-                <nav class="header__menu menu">
+                <header class="header__container">
+                    <div class="header__start">
+                        <a href="/">
+                            <img class="header__logo" src="icons/logo.svg" alt="Logo Greta">
+                        </a>
+                    </div>
+                </header>
+                <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                     <ul class="menu__list list-unstyled">
                         <li class="menu__item">
                             <a class="menu__link" href="tony.html">Tony Stark</a></li>
+                            <div id="trait__blanc"></div>
                         <li class="menu__item">
                             <a class="menu__link" href="pollution.html">La pollution automobile</a></li>
+                            <div id="trait__blanc"></div>
                         <li class="menu__item">
                             <a class="menu__link" href="solutions.html">Solutions</a></li>
+                            <div id="trait__blanc"></div>
                         <li class="menu__item">
                             <a class="menu__link" href="contact.html">Contact</a></li>
+                            <div id="trait__blanc"></div>
                         <li class="menu__item">
                             <a class="menu__link" href="projets.html">Autres projets</a></li>
+                            <div id="trait__blanc"></div>
                         <li class="menu__item">
                             <a class="menu__link" href="a-propos.html">A propos</a></li>
+                            <div id="trait__blanc"></div>
                     </ul>
                 </nav>
             <!--Fin du menu principal-->
@@ -55,6 +76,7 @@
                     <p class="debut__article">Depuis la révolution industrielle les activités humaines émettent de grande quantités de gaz à effet de serre principalement le dioxyde de carbone.</p>
                     <h3 class="article__fond">L’aire de l’Europe est cancérigène</h3>
                     <p class="p__fond">Les voitures sont les deuxième plus gros émetteurs de dioxyde de carbone derrière les industries. Elles sont responsables de la grande partie de pollution de l’air . Un quart de la pollution de l’air est provoqué par les automobiles.</p>
+                            <div id="separateur"></div>
                         </div>
                     </div>
                 </section>
@@ -63,8 +85,10 @@
                     <p>Elles émettent dans l'atmosphère des particules riches en hydrocarbure qui peuvent pénétrer dans les broches, ces particules sont suspectés d'être des cellules cancérigènes. Selon une étude de l'organisation mondiale de la santé les particules fines causeraient la mort de quarante-deux milles personnes en France.</p>
                     <h3>La fin des glaces du Kilimandjaro</h3>
                     <p>Pour avoir une idée sur l'urgence climatique, observons les deux photos du Kilimandjaro une montagne située en Tanzanie en Afrique. La première photo est prise en deux mille six, on voit que la calotte glaciaire est bien présent dans toutes l'étendue de la montagne. La deuxième est prise en deux mille treize et comme on peut l'observer il n’y a plus de calotte glaciaire.</p>
+                    <div id="trait__vert"></div>
                     <img class="img__article" src="img/kilimandjaro.webp" alt="Kilimandjaro en 2006">
                     <p>Le Kilimandjaro en 2006</p>
+                    <div id="trait__vert"></div>
                     <img class="img__article" src="img/kilimandjaro2013.webp" alt="Kilimandjaro en 2013">
                     <p>Le Kilimandjaro en 2013</p>
                     <p>Dans le livre de Mark Lynas six degrés que va-t-il se passer ?, l’auteur nous parle des recherches de Thomson et de son équipe un glaciologue de l'université de l’Ohio. D'après ces recherches en deux mille deux, il en a conclu que quatre-vingts pourcent de la glace avait déjà fondu et d'ici deux mille cinquante il n’y aura plus de glace. Mais ce n'est pas tout à cause de ce réchauffement des milliers d'espèce de plante et animaux sont en voie de disparition dans le continent africaine</p>
