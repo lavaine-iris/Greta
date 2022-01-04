@@ -8,33 +8,39 @@
         <title>Greta</title>
 
         <!-- Déclaration de la feuille de style CSS -->
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" href="src/css/style.css">
 
     </head>
 
         <body>
         <!--Mise en place du header -->
-            <header>
-                <div>
+            <header class="header__container">
+                <div class="header__start">
                     <a href="/">
-                        <img src="icons/logo.svg" alt="Logo Greta">
+                        <img class="header__logo" src="icons/logo.svg" alt="Logo Greta">
                     </a>
                 </div>
 
             <!--Icône menu hamburger-->
-                <button>
-                    <span></span>
+                <button class="header__menu-btn menu-btn">
+                    <span class="menu-btn__bar"></span>
                 </button>
 
             <!--Menu principal-->
-                <nav>
-                    <ul>
-                        <li><a href="tony.html">Tony Stark</a></li>
-                        <li><a href="pollution.html">La pollution automobile</a></li>
-                        <li><a href="solutions.html">Solutions</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="projets.html">Autres projets</a></li>
-                        <li><a href="a-propos.html">A propos</a></li>
+                <nav class="header__menu menu">
+                    <ul class="menu__list list-unstyled">
+                        <li class="menu__item">
+                            <a class="menu__link" href="tony.html">Tony Stark</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="pollution.html">La pollution automobile</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="solutions.html">Solutions</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contact.html">Contact</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="projets.html">Autres projets</a></li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="a-propos.html">A propos</a></li>
                     </ul>
                 </nav>
             <!--Fin du menu principal-->
@@ -44,9 +50,13 @@
         <!-- Contenu principal de la page -->
             <main>
                 <section>
-                    <p>Depuis la révolution industrielle les activités humaines émettent de grande quantités de gaz à effet de serre principalement le dioxyde de carbone.</p>
-                    <h3>L’aire de l’Europe est cancérigène</h3>
-                    <p>Les voitures sont les deuxième plus gros émetteurs de dioxyde de carbone derrière les industries. Elles sont responsables de la grande partie de pollution de l’air . Un quart de la pollution de l’air est provoqué par les automobiles.</p>
+                    <div id="container">
+                        <div id="triangle">
+                    <p class="debut__article">Depuis la révolution industrielle les activités humaines émettent de grande quantités de gaz à effet de serre principalement le dioxyde de carbone.</p>
+                    <h3 class="article__fond">L’aire de l’Europe est cancérigène</h3>
+                    <p class="p__fond">Les voitures sont les deuxième plus gros émetteurs de dioxyde de carbone derrière les industries. Elles sont responsables de la grande partie de pollution de l’air . Un quart de la pollution de l’air est provoqué par les automobiles.</p>
+                        </div>
+                    </div>
                 </section>
 
                 <section>
@@ -75,14 +85,14 @@
             </main>
           <!-- Fin du contenu principal -->
 
-        <!--Mise en place footer-->
-            <footer>
-                <p>PierrePolJ</p>
-                <img src="icons/facebook.svg" alt="Icône Facebook">
-                <img src="icons/mail.svg" alt="Icône Mail">
-                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
-                <img src="icons/mmi.svg" alt="Logo MMI">
-                <p>© Tous droits réservés - 2019</p>
+         <!--Mise en place footer-->
+            <footer class="footer container">
+                <p class="font__footer">PierrePolJ</p>
+                <img class="icon__fb" src="icons/facebook.svg" alt="Icône Facebook">
+                <img class="icon__mail" src="icons/mail.svg" alt="Icône Mail">
+                <p class="font__projet">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI Montbéliard</p>
+                <img class="icon__mmi" src="icons/mmi.svg" alt="Logo MMI">
+                <p class="font__c">© Tous droits réservés - 2019</p>
             </footer>
         </body>
     </html>

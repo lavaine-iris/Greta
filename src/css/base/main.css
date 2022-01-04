@@ -91,7 +91,6 @@ a:link
 .titre__principal{
     padding-top: 40px;
     position: absolute;
-    position: absolute;
     left: 34px;
     top: 20px;
 }
@@ -153,6 +152,30 @@ a:link
     height: 320px;
     left: 0px;
     top: 0px;
+}
+
+.debut__article{
+    position: absolute;
+    width: 326px;
+    height: 54px;
+    left: 25px;
+    top: 99px;
+}
+
+.p__fond{
+    position: absolute;
+    width: 313px;
+    height: 147px;
+    left: 22px;
+    top: 414px;
+}
+
+.article__fond{
+    position: absolute;
+width: 276px;
+height: 70px;
+left: 22px;
+top: 310px;
 }
 
 
