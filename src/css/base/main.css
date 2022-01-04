@@ -22,12 +22,41 @@
     top: 250px;
 }
 
+h2, h3, p {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 h5{
     color: var(--blanc);
     font-family: var(--font-source);
     font-size: var(--title-md);
     padding-top: 30px;
     margin-left: 20px;
+}
+
+h3{
+    font-family: var(--font-source);
+    font-size: var(--title-lg); 
+}
+
+h2{
+    font-family: var(--font-source);
+    font-size: var(--title-xl);  
+    font-weight: 700;
+}
+
+p{
+    font-family: var(--font-source);
+}
+
+.iron__accueil{
+    margin-left: 20px;
+}
+
+.titre__accueil{
+    margin-left: 70px;
+    line-height: 0px;
 }
 
 .article__1{
@@ -46,4 +75,10 @@ height: 31.9px;
 left: 156px;
 top: 213px;
 }
+
+a:link 
+{ 
+ text-decoration: none; 
+ color: black;
+} 
 

@@ -1,0 +1,14 @@
+.bouton__lire{
+    margin-bottom: 20px;
+    position: relative;
+    left: 100px;
+    display: inline-block;
+    background-color: var(--noir-1);
+    color: var(--vert);
+    text-align: center;
+    padding:15px;
+    width: 196px;
+    height: 52px;
+    font-size: var(--title-md);
+    font-family: var(--font-source);
+}
