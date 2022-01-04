@@ -1,0 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*Mise en forme des titres et paragraphes*/
+h1{
+    font-family: var(--font-mono);
+}
