@@ -74,8 +74,8 @@
             <main>
                 <div class="home">
                     <div x-data="{E77: false}">
-                        <img  x-on:click="E77=!E77;" class="logo__accueil" src="icons/logo.svg" alt="Logo Greta">
-                        <img x-show="E77" class="logo__accueil1" src="img/casque_iron.webp" alt="Casque Iron Man">
+                        <img  x-on:click="E77=!E77;" x-show="!E77" class="logo__accueil" src="icons/logo.svg" alt="Logo Greta">
+                        <img x-on:click="E77=!E77;" x-show="E77" class="logo__accueil1" src="img/casque_iron.webp" alt="Casque Iron Man">
                         <h1 class="titre">GRETA</h1>
                     </div>
                     <img class="photo__accueil" src="img/herbe.webp" alt="Photo accueil">
@@ -124,7 +124,7 @@
                 <p class="font__footer">PierrePolJ</p>
                 <img class="icon__fb" src="icons/facebook.svg" alt="Icône Facebook">
                 <img class="icon__mail" src="icons/mail.svg" alt="Icône Mail">
-                <p class="font__projet">Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/">MMI Montbéliard</a></p>
+                <p class="font__projet">Projet réalisé dans le cadre d’un exercice pédagogique au département <a class="site__footer" href="http://mmimontbeliard.com/">MMI Montbéliard</a></p>
                 <img class="icon__mmi" src="icons/mmi.svg" alt="Logo MMI">
                 <p class="font__c">© Tous droits réservés - 2019</p>
             </footer>

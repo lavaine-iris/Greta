@@ -43,3 +43,8 @@
     top: 50px;
 }
 
+.site__footer{
+    text-decoration: none; 
+    color: var(--gris-2);
+}
+
