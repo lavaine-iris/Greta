@@ -26,8 +26,6 @@ h2, h3, p, h4 {
     padding-left: 20px;
 }
 
-
-
 h5{
     color: var(--blanc);
     font-family: var(--font-source);
@@ -95,8 +93,6 @@ main {
     margin-top: 80px;
 }
 
-
-
 .debut__article3{
     font-size: var(--text-sm);
     position: absolute;
@@ -110,23 +106,22 @@ main {
 }
 
 .autres__projets{
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     position: relative;
-    top: 166px;
+    top: 60px;
     left: 113px;
     width: 150px;
-    
 }
 
 .debut__article4{
     position: relative;
-    top: 136px;
+    top: 54px;
 }
 
 .propos{
     line-height: 25px;
     position: relative;
-    top: 154px;
+    top: 54px;
     font-size: var(--title-md);
 }
 
@@ -137,7 +132,7 @@ main {
 a:link 
 { 
  text-decoration: none; 
- color: var(--noir);
+ color: var(--vert);
 } 
 
 .nom__projet{

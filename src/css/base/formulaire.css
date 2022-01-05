@@ -15,20 +15,20 @@
 
 .presentation1{
     position: relative;
-    top: 120px;
+    top: 70px;
     font-weight: 600;
 }
 
 .presentation2{
     position: relative;
-    top: 120px;
+    top: 80px;
     font-weight: 100;
 }
 
 #message {
     font-family: var(--font-source);
     position: relative;
-    top: 60px;
+    top: 20px;
     border: 1px solid var(--noir);
     width: 322px;
     height: 160px;
@@ -38,7 +38,7 @@
 #email{
     font-family: var(--font-source);
     position: relative;
-    top: 100px;
+    top: 50px;
     border: 1px solid var(--noir);
     margin-left: 23px;
     width: 322px;
@@ -48,13 +48,13 @@
 .titre__formulaire1{
     margin-left: 25px;
     position: relative;
-    top: 130px;
+    top: 70px;
 }
 
 .titre__formulaire2{
     margin-left: 25px;
     position: relative;
-    top: 90px;
+    top: 50px;
 }
 
 .bouton__envoyer{
@@ -66,5 +66,5 @@
     width: 121px;
     height: 39px;
     left: 223px;
-    top: 100px;
+    top: 80px;
 }
