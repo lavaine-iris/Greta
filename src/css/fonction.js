@@ -1,8 +1,8 @@
 function monterLegende() {
-    document.querySelector('.legende1').style.display = 'block';
+    document.querySelector('.texte13').style.display = 'block';
     return anime ({
-        targets: '.legende1',
-        translateY: '-5em',
+        targets: '.texte13',
+        translateY: '-4em',
         autoplay: false,
         duration: 300, 
         easing: 'linear'
@@ -11,7 +11,7 @@ function monterLegende() {
 
 function descendreLegende() {
     return anime ({
-        targets: '.legende1',
+        targets: '.texte13',
         translateY: 0,
         autoplay: false,
         duration: 300, 

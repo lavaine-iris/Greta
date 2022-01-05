@@ -1,22 +1,27 @@
 .visionneuse {
 	grid-column: 2;
 	grid-row: 2;
-	width: 500px;
-	height: 323px;
+	width: 100vw;
+	height: 198px;
 	padding: 1px;
+    margin-bottom: 10px;
 	position: relative;
 	overflow: hidden;
 }
-
-.legende1 {
+.image13{
+    width: 100%;
+    height: 100%;
+}
+.texte13 {
+    font-family: var(--font-source);
 	position: relative;
 	text-align: center;
     left: 29px;
 	width: 323px;
 	margin: 0px;
 	padding: 0px;
-	z-index: 2;
-	line-height: 5em;
+	z-index: 0;
+	line-height: 3em;
 	color: black;
 	background-color: var(--gris-1);
 	top: 0;
@@ -41,11 +46,14 @@
 	width: 6600px;
 	height: 400px;
 	left:0;
+    position: relative;
+    z-index: 0;
 }
 
 .images15 img{
     max-width: 70%;
     left: 60px;
+    z-index: 0;
 }
 
 .image15 {
