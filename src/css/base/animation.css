@@ -39,12 +39,13 @@
 
 .images15 {
 	width: 6600px;
-	height: 350px;
+	height: 400px;
 	left:0;
 }
 
 .images15 img{
-    max-width: 50%;
+    max-width: 70%;
+    left: 60px;
 }
 
 .image15 {
