@@ -13,6 +13,8 @@
         <!-- Déclaration de la librairie AlpineJS-->
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 
+        <script src="https://animejs.com/lib/anime.min.js"></script>
+		<script src="src/js/fonctions.js"></script>
     </head>
 
         <body x-data="{ atTop: true }">
@@ -100,7 +102,7 @@
                 </section>
 
                 <section class="fond__vert2">
-                    <h4>L’armure est peut être une solution</h4>
+                    <h4 class="armure">L’armure est peut être une solution</h4>
                     <div id="trait__noir"></div>
                     <p>On se demande s'il n'était pas préférable que le Super héros se déplaçait à l'aide de son armure pour éviter de polluer. Sachant que durant ces dernières années, le problème du réchauffement climatique fait susciter beaucoup de débat que nous allons en parler dans l’article suivant.</p>
                 </section>
@@ -108,11 +110,22 @@
                 <section>
                     <h3 class="galerie">GALERIE DE FILMS</h3>
                     <div id="trait__noir"></div>
-                    <img src="img/afficheironman.webp" alt="Affiche Iron Man 2">
-                    <img src="img/afficheironman3.webp" alt="Affiche Iron Man 3">
-                    <img src="img/avengers.webp" alt="Affiche Avengers">
-                    <img src="img/avengersendgame.webp" alt="Affiche Avengers End Game">
+                    <div class="droite15">&nbsp;</div>
+                    <div class="carrousel">
+                        <div class="images15">
+                            <img id="img1" class="image15 imgalt" src="img/afficheironman.webp" alt="Affiche Iron Man 2">
+                            <img id="img2" class="image15 imgalt" src="img/afficheironman3.webp" alt="Affiche Iron Man 3">
+                            <img id="img3" class="image15 imgalt" src="img/avengers.webp" alt="Affiche Avengers">
+                            <img id="img4" class="image15" src="img/avengersendgame.webp" alt="Affiche Avengers End Game">
+                        </div>
+                    </div>
                 </section>
+
+                <script>
+			
+                    carrouselAlternate();
+                    
+                </script>
             </main>
              <!-- Fin du contenu principal -->
 

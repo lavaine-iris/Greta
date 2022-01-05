@@ -32,15 +32,6 @@ img{
     top: 270px;
 }
 
-figcaption{
-    font-size: var(--test-xs);
-    font-family: var(--font-source);
-    color: var(--gris-2);
-    margin-left: 30px;
-    margin-bottom: 20px;
-    position: relative;
-    top: 0px;
-}
 
 .img__article{
     width: 322px;
@@ -57,6 +48,7 @@ figcaption{
 }
 
 .visage{
+    margin-bottom: 40px;
     max-width: 40%;
     position: relative;
     left: 100px;

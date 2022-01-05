@@ -13,6 +13,7 @@
 @import url('base/media.css');
 @import url('base/bouton.css');
 @import url('base/formulaire.css');
+@import url('base/animation.css');
 
 /* Layout */
 @import url('layout/header.css');

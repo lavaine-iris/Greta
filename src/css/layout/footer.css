@@ -4,39 +4,42 @@
 }
 
 .font__footer{
+    padding-top: 40px;
     color: var(--blanc);
     font-family: var(--font-source);
+    font-weight: 700;
 }
 
 .font__projet{
     color: var(--gris-2);
     font-family: var(--font-source);
+    position: relative;
+    top: 35px;
 }
 
 .font__c{
     text-align: center;
     color: var(--blanc);
     font-family: var(--font-source);
+    position: relative;
+    top: 40px;
 }
 
 .icon__fb{
     position: relative;
-    width: 50px;
-    height: 46px;
-    left: 130px;
+    top: 25px;
+    left: 100px;
 }
 
 .icon__mail{
     position: relative;
-    width: 42px;
-    height: 39px;
-    left: 201px;
+    left: 150px;
+    top: 25px;
 }
 
 .icon__mmi{
     position: relative;
-    width: 42px;
-    height: 38px;
     left: 169px;
+    top: 50px;
 }
 

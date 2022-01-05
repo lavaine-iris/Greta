@@ -13,6 +13,8 @@
         <!-- Déclaration de la librairie AlpineJS-->
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 
+        <script src="https://animejs.com/lib/anime.min.js"></script>
+		<script src="src/js/fonctions.js"></script>
     </head>
 
         <body x-data="{ atTop: true }">
@@ -87,11 +89,17 @@
                     <div id="trait__noir"></div>
                     <p>Pour avoir une idée sur l'urgence climatique, observons les deux photos du Kilimandjaro une montagne située en Tanzanie en Afrique. La première photo est prise en deux mille six, on voit que la calotte glaciaire est bien présent dans toutes l'étendue de la montagne. La deuxième est prise en deux mille treize et comme on peut l'observer il n’y a plus de calotte glaciaire.</p>
                     <div id="trait__vert"></div>
-                    <img class="img__article" src="img/kilimandjaro.webp" alt="Kilimandjaro en 2006">
-                    <figcaption>Le Kilimandjaro en 2006</figcaption>
+                    <div class="visionneuse">
+                        <div class="image image13"
+                            x-on:mouseover="monterLegende();"
+					        x-on:mouseleave="descendreLegende();">
+                            <img class="img__article" src="img/kilimandjaro.webp" alt="Kilimandjaro en 2006">
+                            <figcaption class="legende1">Le Kilimandjaro en 2006</figcaption>
+                        </div>
+                    </div>
                     <div id="trait__vert"></div>
                     <img class="img__article" src="img/kilimandjaro2013.webp" alt="Kilimandjaro en 2013">
-                    <figcaption>Le Kilimandjaro en 2013</figcaption>
+                    <figcaption class="legende1">Le Kilimandjaro en 2013</figcaption>
                     <p>Dans le livre de Mark Lynas six degrés que va-t-il se passer ?, l’auteur nous parle des recherches de Thomson et de son équipe un glaciologue de l'université de l’Ohio. D'après ces recherches en deux mille deux, il en a conclu que quatre-vingts pourcent de la glace avait déjà fondu et d'ici deux mille cinquante il n’y aura plus de glace. Mais ce n'est pas tout à cause de ce réchauffement des milliers d'espèce de plante et animaux sont en voie de disparition dans le continent africaine</p>
                 </section>
 

@@ -84,7 +84,7 @@ p{
     width: 63.4px;
     height: 31.9px;
     left: 156px;
-top: 213px;
+    top: 213px;
 }
 
 a:link 
@@ -145,13 +145,16 @@ a:link
 }
 
 .fond__vert2{
+    margin-top: 20px;
     background-color: var(--vert);
     position: relative;
-    padding-top: 20px;
     width: 375px;
     height: 320px;
     left: 0px;
-    top: 0px;
+}
+
+.armure{
+    padding-top: 40px;
 }
 
 .debut__article{
@@ -235,8 +238,29 @@ top: 310px;
 }
 
 .propos{
+    line-height: 25px;
     position: relative;
     top: 154px;
+    font-size: var(--title-md);
+}
+
+.propos__p{
+    margin-bottom: 40px;
+}
+
+.background__p{
+    background-color: var(--gris-1);
+}
+
+a:link 
+{ 
+ text-decoration: none; 
+ color: var(--noir);
+} 
+
+.nom__projet{
+    color: var(--noir);
+    width: 200px;
 }
 
 
