@@ -9,7 +9,6 @@
     padding-right: var(--space3x);
   }
 
-
 /*Mise en forme des titres et paragraphes*/
 .titre{
     z-index: 1;
@@ -26,6 +25,8 @@ h2, h3, p, h4 {
     padding-right: 20px;
     padding-left: 20px;
 }
+
+
 
 h5{
     color: var(--blanc);
@@ -61,13 +62,6 @@ p{
     font-family: var(--font-source);
 }
 
-.background__accueil{
-    background-color: var(--gris-1);
-    padding-top: 30px;
-    width: 375px;
-    height: 530px;
-}
-
 .iron__accueil{
     margin-left: 20px;
 }
@@ -86,20 +80,6 @@ p{
     top: -100px;
 }
 
-.down{
-    position: absolute;
-    width: 63.4px;
-    height: 31.9px;
-    left: 156px;
-    top: 213px;
-}
-
-a:link 
-{ 
- text-decoration: none; 
- color: black;
-} 
-
 .titre__principal{
     padding-top: 40px;
     position: absolute;
@@ -107,109 +87,15 @@ a:link
     top: 20px;
 }
 
-#container {
-    position: relative;
-    height: 600px;
-    width: 375px;
-    background-color: var(--vert);
-
-}
-
-#triangle{
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 600px 375px;
-    border-color: transparent transparent var(--gris-1) transparent
-}
-
-.fond__vert{
-    background-color: var(--vert);
-    position: relative;
-    padding-top: 20px;
-    width: 375px;
-    height: 400px;
-    left: 0px;
-    top: 0px;
-}
-
-#trait__vert{
-    height: 12px;
-    background-color: var(--vert);
-    width: 322px;    
-    position:relative;
-    left: 31px;
-    bottom:-1px;
-}
-
-#trait__noir{
-    height: 8px;
-    width: 70px;
-    background-color: var(--noir);
-    position: relative;
-    left: 20px;
-    bottom: 15px;
-}
-
-#trait__vert1{
-    height: 12px;
-    background-color: var(--vert);
-    width: 322px;  
-    image-orientation: -90deg; 
-    position: absolute;
-width: 400px;
-height: 0px;
-left: -3px;
-top: 808px;  
-
-}
-
-.fond__vert2{
-    margin-top: 20px;
-    background-color: var(--vert);
-    position: relative;
-    width: 375px;
-    height: 320px;
-    left: 0px;
-}
-
 .armure{
     padding-top: 40px;
 }
 
-.debut__article{
-    position: absolute;
-    width: 326px;
-    height: 54px;
-    left: 25px;
-    top: 99px;
+main {
+    margin-top: 80px;
 }
 
-.p__fond{
-    position: absolute;
-    width: 313px;
-    height: 147px;
-    left: 22px;
-    top: 414px;
-}
 
-.article__fond{
-    position: absolute;
-    width: 276px;
-    height: 70px;
-    left: 22px;
-    top: 310px;
-}
-
-#separateur{
-    height: 8px;
-    width: 100px;
-    background-color: var(--noir);
-    position: absolute;
-    width: 160px;
-    left: 108px;
-    top: 592px;
-}
 
 .debut__article3{
     font-size: var(--text-sm);
@@ -219,16 +105,9 @@ top: 808px;
     top: 88px;
 }
 
-.fond__vert3{
-    background-color: var(--vert);
-    height: 600px;
-    padding-top: 20px;
-}
-
 .dernier_p{
     margin-bottom: 130px;
 }
-
 
 .autres__projets{
     margin-bottom: 200px;
@@ -237,18 +116,6 @@ top: 808px;
     left: 113px;
     width: 150px;
     
-}
-
-.cercle{
-    height: 150px; 
-    width: 150px; 
-    background-color: var(--vert);
-    border-radius: 50%; 
-    color: var(--blanc);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
 
 .debut__article4{
@@ -265,10 +132,6 @@ top: 808px;
 
 .propos__p{
     margin-bottom: 40px;
-}
-
-.background__p{
-    background-color: var(--gris-1);
 }
 
 a:link 
