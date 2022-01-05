@@ -97,14 +97,15 @@ Ne pas oublier d'ajouter une transition plus haut pour l'animation */
   background-color: var(--black);
 }
 
-#trait__blanc{
-    height: 2px;
-    width: 375px;
-    background-color: var(--gris-1);
-    position: relative;
-    left: -50px;
-    top: 30px;
+.trait__blanc{
+  height: 2px;
+  width: 375px;
+  background-color: var(--gris-1);
+  position: relative;
+  left: -50px;
+  top: 30px;
 }
+
 
 /*Permet d'annuler le scrool*/
 .noscroll,
