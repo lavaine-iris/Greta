@@ -15,6 +15,14 @@
     <main>
         <h4 class="erreur">Error 404</h4>
         <p>La page que vous recherchez n'est pas accessible.</p>
+
+        <form action="https://duckduckgo.com/" method="GET" 
+            x-data="{ q:'', }" 
+            x-on:submit="q = q + ' site:greta.ilavaine.fr'">
+            <label class="error" for="q">Texte à chercher :</label>
+            <input type="text" id="q" name="q" x-model="q">
+            <button class="bouton__rechercher" type="submit">Rechercher</button>
+        </form>
         <p>Menu du site :</p>
         <ul class="menu__list list-unstyled">
             <li class="menu__item">

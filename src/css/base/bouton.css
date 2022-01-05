@@ -13,3 +13,15 @@
     font-family: var(--font-source);
 }
 
+.bouton__rechercher{
+    font-size: var(--title-md);
+    font-family: var(--font-source);
+    background-color: var(--noir-1);
+    color: var(--vert);
+    position: relative;
+    width: 121px;
+    height: 39px;
+    left: 223px;
+    top: 20px;
+}
+

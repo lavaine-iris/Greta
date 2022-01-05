@@ -145,4 +145,13 @@ a:link
     font-size: var(--title-xl);
 }
 
+.armure, h4, h3{
+    line-height: 35px;
+}
+
+.error{
+    font-family: var(--font-source);
+    margin-left: 15px;
+}
+
 
