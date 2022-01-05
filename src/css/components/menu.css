@@ -104,3 +104,9 @@ Ne pas oublier d'ajouter une transition plus haut pour l'animation */
     left: -50px;
     top: 30px;
 }
+
+/*Permet d'annuler le scrool*/
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}

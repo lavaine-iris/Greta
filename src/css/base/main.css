@@ -209,8 +209,34 @@ top: 310px;
 
 
 .autres__projets{
+    margin-bottom: 200px;
     position: relative;
-    right: 20px;
-    left: 22px;
     top: 166px;
+    left: 113px;
+    width: 150px;
+    
 }
+
+.cercle{
+    height: 150px; 
+    width: 150px; 
+    background-color: var(--vert);
+    border-radius: 50%; 
+    color: var(--blanc);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.debut__article4{
+    position: relative;
+    top: 136px;
+}
+
+.propos{
+    position: relative;
+    top: 154px;
+}
+
+
