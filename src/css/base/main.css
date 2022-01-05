@@ -132,7 +132,7 @@ a:link
     width: 322px;    
     position:relative;
     left: 30px;
-    bottom:0px;
+    bottom:-1px;
 }
 
 #trait__noir{
