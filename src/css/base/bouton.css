@@ -1,7 +1,7 @@
 .bouton__lire{
     margin-bottom: 20px;
     position: relative;
-    left: 100px;
+    left: 90px;
     display: inline-block;
     background-color: var(--noir-1);
     color: var(--vert);
