@@ -14,9 +14,14 @@
 .logo__accueil{
     z-index: 1;
     position: absolute;
-    width: 109px;
-    height: 147px;
     left: 133px;
+    top: 138px;
+}
+
+.logo__accueil1{
+    z-index: 1;
+    position: absolute;
+    left: 55px;
     top: 138px;
 }
 

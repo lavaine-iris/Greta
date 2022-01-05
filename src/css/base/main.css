@@ -61,6 +61,13 @@ p{
     font-family: var(--font-source);
 }
 
+.background__accueil{
+    background-color: var(--gris-1);
+    padding-top: 30px;
+    width: 375px;
+    height: 530px;
+}
+
 .iron__accueil{
     margin-left: 20px;
 }
@@ -131,7 +138,7 @@ a:link
     background-color: var(--vert);
     width: 322px;    
     position:relative;
-    left: 30px;
+    left: 31px;
     bottom:-1px;
 }
 
@@ -142,6 +149,19 @@ a:link
     position: relative;
     left: 20px;
     bottom: 15px;
+}
+
+#trait__vert1{
+    height: 12px;
+    background-color: var(--vert);
+    width: 322px;  
+    image-orientation: -90deg; 
+    position: absolute;
+width: 400px;
+height: 0px;
+left: -3px;
+top: 808px;  
+
 }
 
 .fond__vert2{
@@ -175,10 +195,10 @@ a:link
 
 .article__fond{
     position: absolute;
-width: 276px;
-height: 70px;
-left: 22px;
-top: 310px;
+    width: 276px;
+    height: 70px;
+    left: 22px;
+    top: 310px;
 }
 
 #separateur{
@@ -208,7 +228,6 @@ top: 310px;
 .dernier_p{
     margin-bottom: 130px;
 }
-
 
 
 .autres__projets{
@@ -261,6 +280,11 @@ a:link
 .nom__projet{
     color: var(--noir);
     width: 200px;
+}
+
+.erreur{
+    font-family: var(--font-oswald);
+    font-size: var(--title-xl);
 }
 
 

@@ -13,6 +13,8 @@
         <!-- Déclaration de la librairie AlpineJS-->
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script> 
+        <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js" defer></script>
     </head>
 
         <body x-data="{ atTop: true }">
@@ -71,8 +73,11 @@
         <!-- Contenu principal de la page -->
             <main>
                 <div class="home">
-                    <img class="logo__accueil" src="icons/logo.svg" alt="Logo Greta">
-                    <h1 class="titre">GRETA</h1>
+                    <div x-data="{E77: false}">
+                        <img  x-on:click="E77=!E77;" class="logo__accueil" src="icons/logo.svg" alt="Logo Greta">
+                        <img x-show="E77" class="logo__accueil1" src="img/casque_iron.webp" alt="Casque Iron Man">
+                        <h1 class="titre">GRETA</h1>
+                    </div>
                     <img class="photo__accueil" src="img/herbe.webp" alt="Photo accueil">
                 </div>
 
@@ -86,6 +91,7 @@
                         <h3 class="tony__accueil">TONY STARK ALIAS </h3>
                         <h2 class="iron__accueil">IRON MAN</h2>
                     </div>
+
                     <img class="photo" src="img/ironman.webp" alt="Iron Man">
                     <h3>IRON MAN UN SUPER HERO DU COMICS</h3>
                     <p>Tony Stark alias Iron man est un super héros qui joue dans l’univers Marvel de la maison d’édition Marvel comics. Tout a commencé en Afghanistan pendant la guerre ...</p>
@@ -93,10 +99,12 @@
                 </article>
 
                 <article>
-                    <h3>LES AUTOMOBILES POLLUENT !</h3>
-                    <img class="photo" src="img/voiture.webp" alt="Voiture">
-                    <p>Les voitures sont les deuxième plus gros émetteurs de dioxyde de carbone derrière les industries. Elles sont responsables de la grande...</p>
-                    <a class="bouton__lire" href="pollution.html">Lire la suite</a>
+                    <div class="background__accueil">
+                        <h3>LES AUTOMOBILES POLLUENT !</h3>
+                        <img class="photo" src="img/voiture.webp" alt="Voiture">
+                        <p>Les voitures sont les deuxième plus gros émetteurs de dioxyde de carbone derrière les industries. Elles sont responsables de la grande...</p>
+                        <a class="bouton__lire" href="pollution.html">Lire la suite</a>
+                    </div>
                 </article>
 
                 <article>
