@@ -154,4 +154,9 @@ a:link
     margin-left: 15px;
 }
 
+.site__footer1{
+    text-decoration: none; 
+    color: var(--noir);
+}
+
 
